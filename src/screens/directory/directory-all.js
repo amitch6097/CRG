@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   ActivityIndicator,
-  Text,
   View,
   FlatList
 } from 'react-native';
@@ -12,6 +11,7 @@ import {
   Container,
   Icon,
   Left,
+  Text,
   Right,
   Input,
   ListItem,

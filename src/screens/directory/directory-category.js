@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import {
   StyleSheet,
   ActivityIndicator,
-  Text,
   View,
   FlatList
 } from 'react-native';
@@ -13,6 +12,7 @@ import {
   Title,
   Button,
   Icon,
+  Text,
   Left,
   Right,
   Body,

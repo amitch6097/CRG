@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 
 import {
-  Text,
   View,
   StyleSheet,
   // AppRegistry,
@@ -13,6 +12,7 @@ import {
 import {
   Container,
   Header,
+  Text,
   Button,
   Icon,
   Body
@@ -85,15 +85,15 @@ export default class AgendaScreen extends Component {
         onPress={() => Linking.openURL(item.website)}>
           <View style={styles.iconTextPair}>
             <Icon name="navigate" />
-            <Text style={{color:'white'}}>Event Website</Text>
+            <Text allowFontScaling={false} style={{color:'white'}}>Event Website</Text>
           </View>
           <Icon name="arrow-forward" />
         </Button>
         <Button full style={styles.mt15Map}
         onPress={() => openMap({ latitude: item.lat, longitude: item.lon })}>
            <View style={styles.iconTextPairFontAwsm}>
-              <FontAwesome style={styles.iconClear}>{Icons.mapMarker}</FontAwesome>
-              <Text adjustsFontSizeToFit={true} style={{flex:1.2,fontSize:10, color:'white'}}>{item.location}</Text>
+              <FontAwesome allowFontScaling={false} style={styles.iconClear}>{Icons.mapMarker}</FontAwesome>
+              <Text allowFontScaling={false} adjustsFontSizeToFit={true} style={{flex:1.2,fontSize:10, color:'white'}}>{item.location}</Text>
            </View>
            <Icon name="arrow-forward" />
         </Button>
@@ -139,16 +139,16 @@ export default class AgendaScreen extends Component {
           <Button transparent onPress={() => this.previousWeek()}
           style={styles.itemFlex1}>
             <Icon name="arrow-back" />
-            <Text adjustsFontSizeToFit={true} numberOfLines={1} style={{color:"#007aff"}}>Previous Week</Text>
+            <Text allowFontScaling={false} adjustsFontSizeToFit={true} numberOfLines={1} style={{color:"#007aff"}}>Previous Week</Text>
           </Button>
           <Body style={styles.itemFlex1, styles.mb15}>
               <Button transparent  onPress={() => this.todayFocus()}>
-                <Text style={{color:"#007aff"}}>Today</Text>
+                <Text allowFontScaling={false} style={{color:"#007aff"}}>Today</Text>
               </Button>
           </Body>
           <Button transparent onPress={() => this.nextWeek()}
           style={styles.itemFlex1}>
-            <Text style={{color:"#007aff"}}>Next Week</Text>
+            <Text allowFontScaling={false} style={{color:"#007aff"}}>Next Week</Text>
             <Icon name="arrow-forward" />
           </Button>
         </View>
@@ -160,7 +160,7 @@ export default class AgendaScreen extends Component {
         <View style={styles.viewRow}>
           <Body style={styles.itemFlex1, styles.mb15}>
               <Button transparent  onPress={() => this.todayFocus()}>
-                <Text style={{color:"#007aff"}}>Today</Text>
+                <Text allowFontScaling={false} style={{color:"#007aff"}}>Today</Text>
               </Button>
           </Body>
         </View>

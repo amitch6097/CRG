@@ -35,13 +35,13 @@ class DirectoryTabs extends Component {
 
       <Container style={{paddingTop:paddingTabs}}>
         <Tabs>
-          <Tab heading="Business Name">
+          <Tab allowFontScaling={false} heading="Business Name">
             <DirectoryAll
             naviagtor={this.props.naviagtor}
             directoryData={this.props.directoryData.all}
             onDirectoryData={this.handleDirectoyDataAll}/>
           </Tab>
-          <Tab heading="Category">
+          <Tab allowFontScaling={false} heading="Category">
             <DirectoryCategory
             naviagtor={this.props.naviagtor}
             directoryData={this.props.directoryData.category}

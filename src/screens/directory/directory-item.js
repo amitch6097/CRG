@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import {
   StyleSheet,
-  Text,
   View,
   Linking
 } from 'react-native';
@@ -14,6 +13,7 @@ import {
   Content,
   Button,
   Icon,
+  Text,
   Left,
   Right,
   Body

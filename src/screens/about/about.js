@@ -29,7 +29,7 @@ class About extends Component {
       <Container style={styles.container}>
         <Header>
           <Body>
-            <Title>Canine Resource Guide</Title>
+            <Title allowFontScaling={false}>Canine Resource Guide</Title>
           </Body>
         </Header>
         <Content style={{ backgroundColor: "#fff"}}>
@@ -43,8 +43,8 @@ class About extends Component {
             <Button full success style={styles.mt15}
             onPress={() => call({number:"2483772918",prompt: false}).catch(console.error)}>
               <View style={styles.iconTextPair}>
-                 <FontAwesome style={styles.iconClear}>{Icons.phone}</FontAwesome>
-                 <Text style={{color:'white'}}>Call 248-377-2918</Text>
+                 <FontAwesome allowFontScaling={false} style={styles.iconClear}>{Icons.phone}</FontAwesome>
+                 <Text allowFontScaling={false} style={{color:'white'}}>Call 248-377-2918</Text>
                </View>
                <Icon name="arrow-forward" />
             </Button>
@@ -52,7 +52,7 @@ class About extends Component {
             <Button full info style={styles.mt15}
             onPress={() => Linking.openURL("https://midogguide.com/")}>
               <View style={styles.iconTextPair}>
-                <Text style={{color:'white'}}>Michigan Dog Guide Website</Text>
+                <Text allowFontScaling={false} style={{color:'white'}}>Michigan Dog Guide Website</Text>
               </View>
               <Icon name="arrow-forward" />
             </Button>
@@ -60,7 +60,7 @@ class About extends Component {
             <Button full info style={styles.mt15}
             onPress={() => Linking.openURL("https://www.canineresourceguide.com/")}>
               <View style={styles.iconTextPair}>
-                <Text style={{color:'white'}}>Canine Resource Guide Website</Text>
+                <Text allowFontScaling={false} style={{color:'white'}}>Canine Resource Guide Website</Text>
               </View>
               <Icon name="arrow-forward" />
             </Button>

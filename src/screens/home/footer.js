@@ -91,20 +91,20 @@ class AppFooter extends Component {
         <Footer>
           <FooterTab>
             <Button active={this.state.tab1} onPress={() => this.toggleTab1()}>
-              <Icon active={this.state.tab1} name="bookmarks" />
-              <Text>Guide</Text>
+              <Icon allowFontScaling={false} active={this.state.tab1} name="bookmarks" />
+              <Text allowFontScaling={false}>Guide</Text>
             </Button>
             <Button active={this.state.tab2} onPress={() => this.toggleTab2()}>
-              <FontAwesome style={{fontSize:17,padding:6, color:'gray'}}>{Icons.calendar}</FontAwesome>
-              <Text adjustsFontSizeToFit={true} numberOfLines={1}>Calendar</Text>
+              <FontAwesome allowFontScaling={false} style={{fontSize:17,padding:6, color:'gray'}}>{Icons.calendar}</FontAwesome>
+              <Text allowFontScaling={false} adjustsFontSizeToFit={true} numberOfLines={1}>Calendar</Text>
             </Button>
             <Button active={this.state.tab3} onPress={() => this.toggleTab3()}>
-              <Icon active={this.state.tab3} name="search" />
-              <Text adjustsFontSizeToFit={true} numberOfLines={1}>Directory</Text>
+              <Icon allowFontScaling={false} active={this.state.tab3} name="search" />
+              <Text allowFontScaling={false} adjustsFontSizeToFit={true} numberOfLines={1}>Directory</Text>
             </Button>
             <Button active={this.state.tab4} onPress={() => this.toggleTab4()}>
-              <Icon active={this.state.tab4} name="paw" />
-              <Text>About</Text>
+              <Icon allowFontScaling={false} active={this.state.tab4} name="paw" />
+              <Text allowFontScaling={false}>About</Text>
             </Button>
           </FooterTab>
         </Footer>

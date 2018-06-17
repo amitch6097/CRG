@@ -15,7 +15,7 @@
     </Body>
     <Button transparent onPress={this.nextPage}
     style={styles.itemFlex1}>
-      <Text>Next</Text>
+      <Text >Next</Text>
       <Icon name="arrow-forward" />
     </Button>
   </View>

@@ -182,8 +182,8 @@ class PDFScreen extends Component {
             transparent
             onPress={() => this.toggleSideBar()}
           >
-            <Icon name={this.state.indexButtonIcon} />
-            <Text
+            <Icon allowFontScaling={false} name={this.state.indexButtonIcon} />
+            <Text allowFontScaling={false}
              numberOfLines={1}
              style={{marginTop:10, fontSize:fontSize, flex:1}}>
               Index
@@ -191,7 +191,7 @@ class PDFScreen extends Component {
           </Button>
         </Left>
         <Body>
-          <Title style={{marginTop:5}}>Guide</Title>
+          <Title allowFontScaling={false} style={{marginTop:5}}>Guide</Title>
         </Body>
         <Right>
           <View style={{flexDirection: 'row', marginTop:10}}>
